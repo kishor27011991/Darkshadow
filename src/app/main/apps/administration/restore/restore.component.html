@@ -1,0 +1,187 @@
+
+
+<div class="page-layout carded fullwidth">
+    <div class="top-bg accent"></div>
+        <div class="center">
+            <div class="header accent p-24" fxLayout="row" fxLayoutAlign="start center">
+                <h2 class="m-0">Restore </h2>
+            </div>
+            <div class="content-card">
+                <div class="content p-24">
+                    <form class="mat-card mat-elevation-z4 p-24 mr-24" fxLayout="column" fxLayoutAlign="start"
+                            fxFlex="1 0 auto" name="form" [formGroup]="form">
+
+                        <div class="h2 mb-24">Restore Database</div>
+
+                        <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto" >
+                            <!-- <mat-form-field appearance="outline" fxFlex="75">
+                                <mat-label>Backup File</mat-label>
+                                <input matInput formControlName="firstName" required >
+                                <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+                                <mat-error>First Name is required!</mat-error>
+                            </mat-form-field> -->
+                            <!-- <div class="file-path-wrapper">
+                              <input class="file-path" type="text" placeholder="Upload your file">
+                            </div> -->
+                            <!-- <button mat-raised-button type="file" color="accent" class='ml-20' (click)="fileInput.click()">
+                              Upload
+                          </button>  -->
+                          <!-- <div class="file-uploader">
+                            <input hidden type="file" #fileInput/>
+                            <button mat-fab
+                                    color="warn"
+                                    class="add-file-button"
+                                    (click)="fileInput.click()"
+                                    aria-label="Add file"
+                                    [@animate]="{value:'*', params:{delay:'300ms',scale:'0.2'}}">
+                                <mat-icon>add</mat-icon>
+                            </button>
+                        </div> -->
+                        <!-- <span>
+                          <input [accept]="accept" type="file" (change)="onNativeInputFileSelect($event)" #inputFile hidden />
+                          <button type="button" md-raised-button (click)="selectFile()">
+                              <mat-icon>file_upload</mat-icon>
+                              <ng-content *ngIf="!fileCount" select=".nofiles"></ng-content>
+                              <span *ngIf="fileCount">
+                                  <span>{{fileCount}}</span>
+                                  <ng-content select=".selected"></ng-content>
+                              </span>
+                          </button>
+                      </span> -->
+
+                      <!-- <input-file (onFileSelect)="onFileSelect($event)" [accept]="'image/*'">
+        <span class="nofiles">Choose file</span>
+        <span class="selected">Files selected</span>
+    </input-file> -->
+    <!-- <button mat-button (click)="inputFile.click()">Import file</button> {{ inputFile.value }}
+<input #inputFile type="file" [style.display]="'none'"> -->
+                        
+<!-- <form>
+  <div class="file-field md-form">
+    <div mat-fab color="warn" size="sm" class="waves-light" mdbWavesEffect>
+      <span>Choose file</span>
+      <input type="file" mdbFileSelect (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput">
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path" type="text" placeholder="Upload your file" [value]="showFiles()">
+    </div>
+  </div>
+  <button mdbBtn color="primary" (click)="startUpload()">Start uploading</button>
+</form> -->
+
+
+
+
+
+
+
+
+</div>
+
+                      
+                        <div fxLayout="row" fxLayoutAlign="center center">
+                                <button mat-raised-button type="button" color="accent" class="mr-8">
+                                    Restore
+                                </button>
+                                <button mat-raised-button type="button" color="accent"class='ml-8'>
+                                    Clear
+                                </button>
+                            </div>
+                </form>
+                <!-- <label for="singleFile">Upload file</label>
+                <input id="singleFile" type="file" [fileUploadInputFor]= "fileUploadQueue"/>
+                <br> -->
+                 
+               <!-- <mat-file-upload-queue #fileUploadQueue
+                    [fileAlias]="'file'"> 
+                 
+                    <mat-file-upload [file]="file" [id]="i" *ngFor="let file of fileUploadQueue.files; let i = index"></mat-file-upload> 
+                </mat-file-upload-queue>
+                <div fxLayout="row" fxLayoutAlign="space-evenly center">
+                    <button mat-raised-button type="button" color="accent">
+                        Restore
+                    </button>
+                    <button mat-raised-button type="button" color="accent">
+                        Clear
+                    </button>
+                </div>-->
+                <!-- <form>
+                    <div class="file-field md-form">
+                      <div mdbBtn color="primary" size="sm" class="waves-light" mdbWavesEffect>
+                        <span>Choose file</span>
+                        <input type="file" mdbFileSelect (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path" type="text" placeholder="Upload your file" [value]="showFiles()">
+                      </div>
+                    </div>
+                    <button mdbBtn color="primary" (click)="startUpload()">Start uploading</button>
+                  </form> -->
+
+                  <!-- <div ng-app="MyApp" ng-controller="AppCtrl" layout-margin layout-padding>
+  
+                    <choose-file layout="row" flex="20">
+                      <input id="fileInput" type="file" class="ng-hide">
+                      <md-input-container flex class="md-block">
+                        <input type="text" ng-model="fileName" disabled>
+                        <div class="hint">Select your file</div>
+                      </md-input-container>
+                      <div>
+                        <md-button id="uploadButton" class="md-fab md-mini">
+                          <md-icon class="material-icons">attach_file</md-icon>
+                        </md-button>
+                      </div>
+                    </choose-file>      
+                     
+                  </div>-->
+                  <!-- <mat-form-field>
+                    <ngx-mat-file-input #removableInput formControlName="removablefile" placeholder="Removable Input"></ngx-mat-file-input>
+                    <button mat-icon-button matSuffix *ngIf="!removableInput.empty" (click)="removableInput.clear($event)">
+                      <mat-icon>clear</mat-icon>
+                    </button>
+                  </mat-form-field> -->
+                  <!-- <mat-file-upload
+  [labelText]="'Select file(s)'"
+  [selectButtonText]="'Select file(s)'"
+  [uploadButtonText]="'Upload File(s)'"
+  [allowMultipleFiles]="false"
+  [showUploadButton]="true"
+  [customSvgIcon]="null"
+  [acceptedTypes]="'*.*'"
+  (uploadClicked)="onUploadClicked($event)"
+  (selectedFilesChanged)="onSelectedFilesChanged($event)"
+  >
+</mat-file-upload> -->
+               
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h3>Choose File</h3>            
+            <div class="form-group">
+                <input type="file" name="image" (change)="fileProgress($event)" />
+            </div>
+            <div *ngIf="fileUploadProgress">
+                Upload progress: {{ fileUploadProgress }}
+            </div>
+            <div class="image-preview mb-3" *ngIf="previewUrl">
+                <img [src]="previewUrl" height="300" />                 
+            </div>
+ 
+            <div class="mb-3" *ngIf="uploadedFilePath">
+                {{uploadedFilePath}}
+            </div>
+             
+            <div class="form-group">
+                <button class="btn btn-primary"  (click)="onSubmit()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+                  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- [httpUrl]="'http://localhost:8180/jax-rs-jersey-application-sample'" -->
